@@ -1,10 +1,8 @@
 # LLMSpellingGRPO
 
---
-
 ## Project Overview
 
-This project demonstrates a complete fine-tuning pipeline on a simple but illustrative task: teaching a language model to hyphenate words letter by letter.
+This project demonstrates a complete fine-tuning pipeline on a simple but illustrative task: teaching a language model to split words letter by letter.
 
 ## Key Concepts
 
@@ -23,7 +21,7 @@ This project demonstrates a complete fine-tuning pipeline on a simple but illust
 | Stage | Train Score | Test Score |
 |---|---|---|
 | Base Model (no training) | Poor | Poor |
-| After SFT | 13.51 / 20 | — |
+| After SFT | 13.51 / 20 | 2.5583 / 7|
 | After GRPO | 13.97 / 20 | 2.64 / 7 |
 
 > The gap between train and test scores indicates overfitting due to the small dataset size (61 words total).
@@ -37,7 +35,7 @@ This project demonstrates a complete fine-tuning pipeline on a simple but illust
   - `prompt` — instruction asking the model to spell the word
   - `completion` — correct hyphenated spelling (e.g., `T-R-I-U-M-P-H.`)
   - `word` — original word
-  - `spelling` — hyphenated spelling without trailing period
+  - `spelling` — letter by letter spelling without trailing period
 - Split: **90% train / 10% test**
 
 ---
