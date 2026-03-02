@@ -24,7 +24,7 @@ This project demonstrates a complete fine-tuning pipeline on a simple but illust
 | After SFT | 13.51 / 20 | 2.5583 / 7|
 | After GRPO | 13.97 / 20 | 2.64 / 7 |
 
-> The gap between train and test scores indicates overfitting due to the small dataset size (61 words total).
+The gap between train and test scores indicates overfitting due to the small dataset size (61 words total).
 
 ---
 
