@@ -41,7 +41,7 @@ The gap between train and test scores indicates overfitting due to the small dat
 ---
 
 
-## Dependencies
+## Requirements
 
 - [Transformers](https://huggingface.co/docs/transformers) — model loading
 - [TRL](https://huggingface.co/docs/trl) — SFTTrainer and GRPOTrainer
